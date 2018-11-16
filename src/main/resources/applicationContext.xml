@@ -10,5 +10,10 @@
           class="IoC_XML_Conf.BaseballCoach">
 
     </bean>
+    <bean id="tennisCoach"
+          class="IoC_XML_Conf.TennisCoach">
+
+    </bean>
+
 
 </beans>
