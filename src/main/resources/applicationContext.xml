@@ -8,13 +8,14 @@
 
     <bean id="baseballCoach"
           class="IoC_XML_Conf.BaseballCoach">
-
         <constructor-arg ref="myFortune"/>
     </bean>
+
+
     <bean id="tennisCoach"
           class="IoC_XML_Conf.TennisCoach">
-
     </bean>
+
     <bean id="myFortune" class="DI_XML_Conf.HappyFortuneService"/>
 
 
