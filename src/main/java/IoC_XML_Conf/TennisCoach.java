@@ -3,7 +3,7 @@ package IoC_XML_Conf;
 import DI_XML_Conf.FortuneService;
 
 public class TennisCoach implements Coach {
-    FortuneService fortuneService;
+    private FortuneService fortuneService;
 
     public TennisCoach(FortuneService fortuneService) {
         this.fortuneService = fortuneService;
