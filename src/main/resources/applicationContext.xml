@@ -6,13 +6,17 @@
 
     <!-- bean definitions here -->
 
-    <bean id="myCoach"
+    <bean id="baseballCoachCoach"
           class="IoC_XML_Conf.BaseballCoach">
-
+        <constructor-arg ref="myFortune"/>
     </bean>
+
+    <bean id="myFortune"
+          class="DI_XML_Conf.HappyFortuneService">
+    </bean>
+
     <bean id="tennisCoach"
           class="IoC_XML_Conf.TennisCoach">
-
     </bean>
 
 
