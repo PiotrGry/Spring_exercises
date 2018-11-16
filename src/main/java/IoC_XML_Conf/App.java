@@ -9,7 +9,7 @@ public class App {
                 new ClassPathXmlApplicationContext("applicationContext.xml");
 
         Coach theCoach = context.getBean("tennisCoach", Coach.class);
-        Coach anotherCoach = context.getBean("myCoach",Coach.class);
+        Coach anotherCoach = context.getBean("baseballCoach",Coach.class);
 
         System.out.println(anotherCoach.getDailyWorkout());
 
