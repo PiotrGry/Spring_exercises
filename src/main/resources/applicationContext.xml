@@ -16,6 +16,12 @@
         <constructor-arg ref="myFortune"/>
     </bean>
 
+    <bean id="cricketCoach"
+          class="XML_Conf.DI_set_values_from_file.CricketCoach">
+        <property name="team" value="${foo.team}" />
+        <property name="email" value="${foo.email}" />
+    </bean>
+
 
     <bean id="tennisCoach"
           class="XML_Conf.DI_by_setter.TennisCoach">

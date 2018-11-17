@@ -1,2 +1,2 @@
-foo.emial = "piotr.gmail.com"
-foo.team = "Sandecja_NowySacz"
+foo.email = piotr.gmail.com
+foo.team = Sandecja_NowySacz
