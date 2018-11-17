@@ -1,4 +1,4 @@
-package IoC_XML_Conf;
+package XML_Conf;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

@@ -1,6 +1,7 @@
-package IoC_XML_Conf;
+package XML_Conf.DI_by_constructor;
 
-import DI_XML_Conf.FortuneService;
+import XML_Conf.FortuneService;
+import XML_Conf.Coach;
 
 
 public class BaseballCoach implements Coach {
