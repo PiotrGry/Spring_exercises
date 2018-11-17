@@ -1,4 +1,4 @@
-package DI_XML_Conf;
+package XML_Conf;
 
 public class HappyFortuneService implements FortuneService {
 

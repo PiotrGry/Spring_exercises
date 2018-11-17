@@ -1,0 +1,2 @@
+foo.email = piotr.gmail.com
+foo.team = Sandecja_NowySacz
