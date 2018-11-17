@@ -3,5 +3,5 @@ package XML_Conf;
 public interface Coach {
    String getDailyWorkout();
 
-    String getDailyFortune();
+   String getDailyFortune();
 }
