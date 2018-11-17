@@ -9,11 +9,15 @@ public class App {
         ApplicationContext context =
                 new ClassPathXmlApplicationContext("applicationContext.xml");
 
-        Coach theCoach = context.getBean("tennisCoach", Coach.class);
-        Coach anotherCoach = context.getBean("baseballCoach",Coach.class);
+        Coach tennisCoach = context.getBean("tennisCoach", Coach.class);
+        Coach baseballCoach = context.getBean("baseballCoach",Coach.class);
 
-        System.out.println(anotherCoach.getDailyFortune());
-        System.out.println(anotherCoach.getDailyWorkout());
-        System.out.println(theCoach.getDailyWorkout());
+        System.out.println("-----------Baseball------------");
+        System.out.println(baseballCoach.getDailyFortune());
+        System.out.println(baseballCoach.getDailyWorkout()+"\n");
+
+        System.out.println("---------Tennis---------");
+        System.out.println(tennisCoach.getDailyWorkout());
+        System.out.println(tennisCoach.getDailyFortune());
     }
 }
