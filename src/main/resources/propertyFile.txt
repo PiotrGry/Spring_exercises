@@ -1,0 +1,2 @@
+foo.emial = "piotr.gmail.com"
+foo.team = "Sandecja_NowySacz"
