@@ -12,7 +12,9 @@
     <!-- bean definitions here -->
 
     <bean id="baseballCoach"
-          class="XML_Conf.DI_by_constructor.BaseballCoach">
+          class="XML_Conf.DI_by_constructor.BaseballCoach"
+          scope="singleton">
+        <!-- new instances reference point to the same object  DEFAULT -->
         <constructor-arg ref="myFortune"/>
     </bean>
 
@@ -24,8 +26,11 @@
 
 
     <bean id="tennisCoach"
-          class="XML_Conf.DI_by_setter.TennisCoach">
-        <property name="fortuneService" ref="myFortune"/>
+          class="XML_Conf.DI_by_setter.TennisCoach"
+         scope="prototype">
+    <!-- new instances with different reference-->
+
+    <property name="fortuneService" ref="myFortune"/>
     </bean>
 
     <bean id="myFortune" class="XML_Conf.HappyFortuneService"/>
