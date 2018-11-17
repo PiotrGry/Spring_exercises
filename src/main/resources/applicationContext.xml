@@ -7,17 +7,17 @@
     <!-- bean definitions here -->
 
     <bean id="baseballCoach"
-          class="IoC_XML_Conf.BaseballCoach">
+          class="XML_Conf.DI_by_constructor.BaseballCoach">
         <constructor-arg ref="myFortune"/>
     </bean>
 
 
     <bean id="tennisCoach"
-          class="IoC_XML_Conf.TennisCoach">
-        <constructor-arg ref="myFortune"/>
+          class="XML_Conf.DI_by_setter.TennisCoach">
+        <property name="fortuneService" ref="myFortune"/>
     </bean>
 
-    <bean id="myFortune" class="DI_XML_Conf.HappyFortuneService"/>
+    <bean id="myFortune" class="XML_Conf.HappyFortuneService"/>
 
 
 </beans>
